@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main class="boxes-container">
+    <section class="outer-box">
+      <!-- Box 1: YAY! It’s BOGO -->
+      <label class="box box--expanded" data-box="1">
+        <input type="radio" name="offer" class="box-radio" checked style="display:none;">
+        <div class="box__header">
+          <span class="box__offer">YAY! It’s BOGO</span>
+          <span class="box__price">$10.00 USD</span>
+        </div>
+        <div class="box__content">
+          <div class="box__row">
+            <span class="box__subtitle">1 Unit</span>
+            <span class="box__label box__label--highlight">10% Off</span>
+          </div>
+          <div class="box__row">
+            <span class="box__price box__price--strike">$24.00 USD</span>
+            <span class="box__label">Standard Price</span>
+          </div>
+          <div class="box__options">
+            <label>Size
+              <input type="text" value="S" class="input-size" />
+            </label>
+            <label>Colour
+              <input type="text" value="Black" class="input-color" />
+            </label>
+          </div>
+          <div class="box__unit-details">
+            <span class="box__unit">#1 S Black</span>
+          </div>
+        </div>
+      </label>
+      <!-- Box 2: MOST POPULAR -->
+      <label class="box box--highlight" data-box="2">
+        <input type="radio" name="offer" class="box-radio" style="display:none;">
+        <span class="badge">MOST POPULAR</span>
+        <div class="box__header">
+          <span class="box__offer">MOST POPULAR</span>
+          <span class="box__price">$18.00 USD</span>
+        </div>
+        <div class="box__content">
+          <div class="box__row">
+            <span class="box__subtitle">2 Unit</span>
+            <span class="box__label box__label--highlight">20% Off</span>
+          </div>
+          <div class="box__row">
+            <span class="box__price box__price--strike">$24.00 USD</span>
+          </div>
+          <div class="box__options">
+            <label>Size
+              <input type="text" value="S" class="input-size" />
+            </label>
+            <label>Colour
+              <input type="text" value="Colour" class="input-color" />
+            </label>
+          </div>
+          <div class="box__unit-details">
+            <span class="box__unit">#1 S Black</span>
+            <span class="box__unit">#2 S Colour</span>
+          </div>
+        </div>
+      </label>
+      <!-- Box 3: Free Delivery -->
+      <label class="box" data-box="3">
+        <input type="radio" name="offer" class="box-radio" style="display:none;">
+        <div class="box__header">
+          <span class="box__offer">Free Delivery</span>
+          <span class="box__price">$24.00 USD</span>
+        </div>
+        <div class="box__content">
+          <div class="box__row">
+            <span class="box__subtitle">3 Unit</span>
+            <span class="box__label box__label--highlight">30% Off</span>
+          </div>
+          <div class="box__row">
+            <span class="box__price box__price--strike">$24.00 USD</span>
+          </div>
+          <div class="box__options">
+            <label>Size
+              <input type="text" value="S" class="input-size" />
+            </label>
+            <label>Colour
+              <input type="text" value="Black" class="input-color" />
+            </label>
+          </div>
+          <div class="box__unit-details">
+            <span class="box__unit">#1 S Black</span>
+            <span class="box__unit">#2 S Colour</span>
+            <span class="box__unit">#3 S Black</span>
+          </div>
+        </div>
+      </label>
+      <button class="box__button outer-add-to-cart">Add to Cart</button>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>
